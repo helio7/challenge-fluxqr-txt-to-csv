@@ -1,0 +1,19 @@
+{
+  "name": "challenge-fluxqr-txt-to-csv",
+  "version": "1.0.0",
+  "description": "An API that accepts .txt files with certain content, and then returns .csv files with other certain content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helio7/challenge-fluxqr-txt-to-csv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helio7/challenge-fluxqr-txt-to-csv/issues"
+  },
+  "homepage": "https://github.com/helio7/challenge-fluxqr-txt-to-csv#readme"
+}

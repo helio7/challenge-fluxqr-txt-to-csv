@@ -8,6 +8,8 @@ Decidí hostear una página web en la que el usuario puede enviar un archivo de 
 La página web es una aplicación de React hosteada con AWS Amplify.
 El servidor que procesa y retorna el archivo es una aplicación de Express hosteada con AWS Elastic Beanstalk.
 
+![alt text](https://raw.githubusercontent.com/helio7/challenge-fluxqr-txt-to-csv/main/FluxQR%20-%20TXT%20-%20CSV%20-%20API.png)
+
 ## Cómo testear:
 
 - Ir a la página de la aplicación web:

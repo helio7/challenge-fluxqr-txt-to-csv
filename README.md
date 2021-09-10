@@ -2,6 +2,33 @@
 
 Crear una aplicación en Javascript (puede ser un CLI, una webapp, una API) que pueda parsear un archivo TXT y generar un CSV y viceversa.
 
+## Solución:
+
+Decidí hostear una página web en la que el usuario puede enviar un archivo de entrada, y descargar el archivo de salida.
+La página web es una aplicación de React hosteada con AWS Amplify.
+El servidor que procesa y retorna el archivo es una aplicación de Express hosteada con AWS Elastic Beanstalk.
+
+## Cómo testear:
+
+- Ir a la página de la aplicación web:
+https://main.d1nnf11og4mfvo.amplifyapp.com/
+
+- Hacer click en 'Choose file'.
+- Seleccionar el archivo de entrada.
+  - El nombre del archivo debe seguir el formato 'FLUX_FECHA', siendo FECHA una fecha en formato DDMMAAAA.
+  - La extensión del archivo puede ser .txt, o .csv.
+  - Obviamente el contenido del archivo debe cumplir con las reglas detalladas en la descripción de este challenge.
+  - Podés probar con los archivos FLUX en la raíz de este repositorio, son válidos.
+- Hacer click en 'Submit'.
+- Durante los próximos 5 segundos debería aparecer un botón que dice 'Download file'.
+- Hacer click en 'Download file' para acceder al contenido del archivo de salida.
+  - Si el archivo de salida es un .csv, el archivo se descargará automáticamente.
+  - Si el archivo de salida es un .txt, su contenido se mostrará como un nuevo documento HTML.
+
+- Recomiendo recargar la página cada vez que se envíe un nuevo archivo, ya que el botón 'Download file' no desaparece al seleccionar un nuevo archivo de entrada, y no sabrás cuando está listo el nuevo archivo de salida.
+  
+## Descripción del challenge.
+
 Un ejemplo del archivo TXT a parsear es el siguiente:
 
 `FLUX_<FECHA>.txt`
